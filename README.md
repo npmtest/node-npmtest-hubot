@@ -1,6 +1,6 @@
 # npmtest-hubot
 
-#### basic test coverage for  hubot (v2.19.0)  [![npm package](https://img.shields.io/npm/v/npmtest-hubot.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-hubot) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-hubot.svg)](https://travis-ci.org/npmtest/node-npmtest-hubot)
+#### basic test coverage for  [hubot (v2.19.0)](https://github.com/github/hubot#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-hubot.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-hubot) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-hubot.svg)](https://travis-ci.org/npmtest/node-npmtest-hubot)
 
 #### A simple helpful robot for your Company
 
@@ -35,20 +35,14 @@
 ```json
 
 {
-    "name": "hubot",
-    "version": "2.19.0",
-    "author": "hubot",
-    "keywords": [
-        "github",
-        "hubot",
-        "campfire",
-        "bot"
-    ],
-    "description": "A simple helpful robot for your Company",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/github/hubot.git"
+    "author": {
+        "name": "hubot"
+    },
+    "bin": {
+        "hubot": "./bin/hubot"
+    },
+    "bugs": {
+        "url": "https://github.com/github/hubot/issues"
     },
     "dependencies": {
         "async": ">=0.1.0 <1.0.0",
@@ -61,26 +55,59 @@
         "optparse": "1.0.4",
         "scoped-http-client": "0.11.0"
     },
+    "description": "A simple helpful robot for your Company",
     "devDependencies": {
-        "hubot-mock-adapter": "^1.0.0",
+        "chai": "~2.1.0",
         "coffee-errors": "0.8.6",
+        "hubot-mock-adapter": "^1.0.0",
         "mocha": "^2.1.0",
         "mockery": "^1.4.0",
-        "sinon-chai": "^2.8.0",
         "sinon": "~1.17.0",
-        "chai": "~2.1.0"
+        "sinon-chai": "^2.8.0"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "87c572d210fb0d5f89f756177ae0020d49ffba36",
+        "tarball": "https://registry.npmjs.org/hubot/-/hubot-2.19.0.tgz"
     },
     "engines": {
         "node": ">= 0.8.x",
         "npm": ">= 1.1.x"
     },
+    "gitHead": "c0f6bdf947c5271c2cac5d48730320b129c2e44f",
+    "homepage": "https://github.com/github/hubot#readme",
+    "keywords": [
+        "github",
+        "hubot",
+        "campfire",
+        "bot"
+    ],
+    "license": "MIT",
     "main": "./index",
-    "bin": {
-        "hubot": "./bin/hubot"
+    "maintainers": [
+        {
+            "name": "technicalpickles"
+        },
+        {
+            "name": "bhuga"
+        },
+        {
+            "name": "bkeepers"
+        },
+        {
+            "name": "michaelansel"
+        }
+    ],
+    "name": "hubot",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/github/hubot.git"
     },
     "scripts": {
         "test": "./script/test"
-    }
+    },
+    "version": "2.19.0"
 }
 ```
 
